@@ -1,0 +1,24 @@
+.fixed-image {
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  border-radius: 50%; /* Crop the image into a perfect circle */
+  transition: transform 0.3s ease-out; /* Smooth transition for scale */
+  animation: pulse 1s infinite; /* Apply pulse animation */
+  
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
